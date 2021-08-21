@@ -90,7 +90,7 @@ install_x-ui() {
             exit 1
         fi
         echo -e "Đã phát hiện phiên bản mới nhất của x-ui：${last_version}，bắt đầu cài đặt"
-        wget -N --no-check-certificate -O /usr/local/x-ui-linux-${arch}.tar.gz https://github.com/vietdungit/x-ui/releases/download/${last_version}/x-ui-linux-${arch}.tar.gz
+        wget -N --no-check-certificate -O /usr/local/x-ui-linux-${arch}.tar.gz https://github.com/vietdungit/x-ui/archive/refs/tags/0.1-beta.tar.gz
         if [[ $? -ne 0 ]]; then
             echo -e "${red}Tải xuống x-ui không thành công, vui lòng đảm bảo máy chủ của bạn có thể tải xuống tệp Github${plain}"
             exit 1
